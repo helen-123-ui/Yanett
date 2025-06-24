@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Estudiante">
+    <meta name="description" content="Documento con tablas de evaluaciones y horario semestral">
+    <meta name="keywords" content="tablas, evaluaciones, horario, HTML, educación">
+    <title>Mis primeras tablas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+        .footer-text {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>TABLA DE EVALUACIONES</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">1ª Eval</th>
+                <th colspan="2">2ª Eval</th>
+                <th colspan="2">3ª Eval</th>
+            </tr>
+            <tr>
+                <th style="background-color: green;">Aprobados</th>
+                <th style="background-color: red;">Suspendidos</th>
+                <th style="background-color: green;">Aprobados</th>
+                <th style="background-color: red;">Suspendidos</th>
+                <th style="background-color: green;">Aprobados</th>
+                <th style="background-color: red;">Suspendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Informática</td>
+                <td>20</td>
+                <td>2</td>
+                <td>19</td>
+                <td>3</td>
+                <td>22</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Matemáticas</td>
+                <td>10</td>
+                <td>12</td>
+                <td>15</td>
+                <td>7</td>
+                <td>12</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>HORARIO SEMESTRAL</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Horas</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00-9:00</td>
+                <td style="background-color: red;">Matemáticas</td>
+                <td style="background-color: red;">Lengua</td>
+                <td>Música</td>
+                <td></td>
+                <td style="background-color: red;">Matemáticas</td>
+            </tr>
+            <tr>
+                <td>9:00-10:00</td>
+                <td style="background-color: red;">Matemáticas</td>
+                <td>Inglés</td>
+                <td>Inglés</td>
+                <td style="background-color: blue;">E Física</td>
+                <td style="background-color: red;">Matemáticas</td>
+            </tr>
+            <tr>
+                <td>10:00-10:30</td>
+                <td colspan="5" style="background-color: green;">Recreo</td>
+            </tr>
+            <tr>
+                <td>10:30-11:30</td>
+                <td style="background-color: blue;">E Física</td>
+                <td>Valenciano</td>
+                <td style="background-color: red;">Lengua</td>
+                <td style="background-color: yellow;">Informática</td>
+                <td>Inglés</td>
+            </tr>
+            <tr>
+                <td>12:30-13:30</td>
+                <td>Música</td>
+                <td style="background-color: blue;">E Física</td>
+                <td style="background-color: red;">Lengua</td>
+                <td style="background-color: yellow;">Informática</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13:30-14:30</td>
+                <td></td>
+                <td style="background-color: yellow;">Informática</td>
+                <td></td>
+                <td style="background-color: red;">Matemáticas</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" class="footer-text">
+                    <em>Profesor: LIC. ROSELL ALEJANDRO VALDERRAMA CHUMBES</em>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
